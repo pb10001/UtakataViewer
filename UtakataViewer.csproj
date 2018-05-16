@@ -52,10 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Chat.cs" />
-    <Compile Include="ChatPanel.cs">
+    <Compile Include="Control\ChatPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChatPanel.Designer.cs">
+    <Compile Include="Control\ChatPanel.Designer.cs">
       <DependentUpon>ChatPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Problem.cs" />
@@ -87,7 +87,7 @@
     </Compile>
     <Compile Include="Model\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChatPanel.resx">
+    <EmbeddedResource Include="Control\ChatPanel.resx">
       <DependentUpon>ChatPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\PuzzlePanel.resx">
