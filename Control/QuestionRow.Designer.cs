@@ -34,10 +34,12 @@
             // 
             // answerPanel
             // 
+            this.answerPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.answerPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.answerPanel.Location = new System.Drawing.Point(278, 3);
+            this.answerPanel.Location = new System.Drawing.Point(233, 3);
             this.answerPanel.Name = "answerPanel";
-            this.answerPanel.Size = new System.Drawing.Size(258, 72);
+            this.answerPanel.Size = new System.Drawing.Size(252, 72);
             this.answerPanel.TabIndex = 1;
             // 
             // questionPanel
@@ -45,18 +47,18 @@
             this.questionPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.questionPanel.Location = new System.Drawing.Point(3, 3);
             this.questionPanel.Name = "questionPanel";
-            this.questionPanel.Size = new System.Drawing.Size(269, 72);
+            this.questionPanel.Size = new System.Drawing.Size(224, 72);
             this.questionPanel.TabIndex = 0;
             // 
             // QuestionRow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.answerPanel);
             this.Controls.Add(this.questionPanel);
             this.Name = "QuestionRow";
-            this.Size = new System.Drawing.Size(541, 79);
+            this.Size = new System.Drawing.Size(488, 79);
             this.ResumeLayout(false);
 
         }

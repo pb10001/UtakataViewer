@@ -53,6 +53,7 @@ namespace UtakataViewer
             {
                 var row = new QuestionRow();
                 row.SetConents(item.Questioner, item.Question, item.Answerer, item.Answer);
+                row.Size = new Size(questionList.Size.Width, row.Size.Height);
                 questionList.Controls.Add(row);
             }
             foreach (var item in currentPuzzle.Chats)
