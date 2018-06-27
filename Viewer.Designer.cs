@@ -111,13 +111,14 @@
             // 
             // fetchButton
             // 
+            this.fetchButton.BackColor = System.Drawing.Color.Transparent;
             this.fetchButton.Location = new System.Drawing.Point(181, 32);
             this.fetchButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fetchButton.Name = "fetchButton";
             this.fetchButton.Size = new System.Drawing.Size(87, 29);
             this.fetchButton.TabIndex = 5;
             this.fetchButton.Text = "表示";
-            this.fetchButton.UseVisualStyleBackColor = true;
+            this.fetchButton.UseVisualStyleBackColor = false;
             this.fetchButton.Click += new System.EventHandler(this.fetchButton_Click);
             // 
             // saveFileDialog1

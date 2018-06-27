@@ -18,8 +18,8 @@ namespace UtakataViewer
         }
         public void SetConents(string questioner, string question, string answerer, string answer)
         {
-            questionPanel.SetContents(questioner, question);
-            answerPanel.SetContents(answerer, answer);
+            questionPanel.SetContents(questioner, "Q: " + question);
+            answerPanel.SetContents(answerer, "A: "+answer);
         }
     }
 }

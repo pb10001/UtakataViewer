@@ -32,10 +32,15 @@ namespace UtakataViewer
         {
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            var res = client.DownloadString(string.Format("{0}?room={1}", endPoint,searchBox.Text));
+            client.DownloadStringCompleted += Client_DownloadStringCompleted;
+            client.DownloadStringAsync(new Uri(string.Format("{0}?room={1}", endPoint,searchBox.Text)));
+        }
+
+        private void Client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
+        {
             try
             {
-                currentPuzzle = JsonConvert.DeserializeObject<Puzzle>(res);
+                currentPuzzle = JsonConvert.DeserializeObject<Puzzle>(e.Result);
                 Update();
             }
             catch
@@ -43,6 +48,7 @@ namespace UtakataViewer
                 MessageBox.Show("ルームが存在しません", "エラー");
             }
         }
+
         private new void Update()
         {
             questionList.Controls.Clear();
@@ -54,6 +60,7 @@ namespace UtakataViewer
                 var row = new QuestionRow();
                 row.SetConents(item.Questioner, item.Question, item.Answerer, item.Answer);
                 row.Size = new Size(questionList.Size.Width, row.Size.Height);
+                row.Anchor = (AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
                 questionList.Controls.Add(row);
             }
             foreach (var item in currentPuzzle.Chats)

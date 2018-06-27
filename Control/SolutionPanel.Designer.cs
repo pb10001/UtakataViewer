@@ -36,9 +36,9 @@
             this.contentLabel.AutoSize = true;
             this.contentLabel.Location = new System.Drawing.Point(3, 0);
             this.contentLabel.Name = "contentLabel";
-            this.contentLabel.Size = new System.Drawing.Size(35, 12);
+            this.contentLabel.Size = new System.Drawing.Size(11, 12);
             this.contentLabel.TabIndex = 0;
-            this.contentLabel.Text = "label1";
+            this.contentLabel.Text = "-";
             // 
             // SolutionPanel
             // 
