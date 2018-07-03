@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="VersionBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionBox.Designer.cs">
+      <DependentUpon>VersionBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Chat.cs" />
     <Compile Include="Control\ChatPanel.cs">
       <SubType>UserControl</SubType>
@@ -87,6 +93,9 @@
     </Compile>
     <Compile Include="Model\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="VersionBox.resx">
+      <DependentUpon>VersionBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\ChatPanel.resx">
       <DependentUpon>ChatPanel.cs</DependentUpon>
     </EmbeddedResource>

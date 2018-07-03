@@ -88,7 +88,7 @@ namespace UtakataViewer
 
         private void ヘルプLToolStripButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/pb10001/utakata-umigame");
+            new VersionBox().ShowDialog();
         }
     }
 }
